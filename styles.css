@@ -1,33 +1,29 @@
-/* Estilos generales */
+/* Estilo global para la web */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
     color: #333;
 }
 
-/* Estilos del encabezado */
+/* Encabezado */
 header {
-    background: #0073e6;
+    background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-/* Menú de navegación */
+/* Enlace de navegación */
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
-    background: #005bb5;
+    background-color: #555;
 }
 
 nav ul li {
-    margin: 0;
-    padding: 15px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -40,43 +36,29 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Contenido principal */
+/* Estilo para el contenido principal */
 main {
     padding: 20px;
     text-align: center;
 }
 
-/* Formulario de contacto */
-form {
-    max-width: 400px;
-    margin: auto;
+/* Estilo para los artistas (sección de cantantes) */
+.artist {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background: #0073e6;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #005bb5;
+.artist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #333;
 }
 
 /* Pie de página */
 footer {
-    background: #0073e6;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;

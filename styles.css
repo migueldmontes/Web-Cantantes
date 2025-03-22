@@ -1,68 +1,62 @@
-/* Estilo global para la web */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Encabezado */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Enlace de navegación */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #555;
-}
-
-nav ul li {
-    margin: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para el contenido principal */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Estilo para los artistas (sección de cantantes) */
-.artist {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-}
-
-.artist img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #333;
-}
-
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Artistas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-image: url('https://www.elplural.com/uploads/s1/18/43/90/7/taylor-swift-durante-uno-de-sus-conciertos-de-la-gira-eras-tour-ep.jpeg'); /* Imagen de fondo para la cabecera */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .header h1 {
+            font-size: 2.5em;
+        }
+        .content {
+            padding: 20px;
+        }
+        .artist {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 300px;
+            border-radius: 10px;
+        }
+        .artist img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Galería de Artistas</h1>
+        <p>Descubre las obras de los mejores artistas</p>
+    </div>
+    <div class="content">
+        <div class="artist">
+            <img src="https://okdiario.com/img/2019/07/24/cantantes-famosos-regueton-655x368.jpeg" alt="Artista 1">
+            <h2>Nombre del Artista</h2>
+            <p>Descripción breve sobre el artista.</p>
+        </div>
+        <div class="artist">
+            <img src="https://cdn.milenio.com/uploads/media/2020/11/26/camilo-instagram.jpg" alt="Artista 2">
+            <h2>Nombre del Artista</h2>
+            <p>Descripción breve sobre el artista.</p>
+        </div>
+    </div>
+</body>
+</html>
